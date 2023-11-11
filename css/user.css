@@ -1,0 +1,41 @@
+.login-user{
+    /* background-color: rgb(11, 166, 210); */
+    width: 102px;
+    /* border: 1px solid black; */
+    padding: 0px;
+    text-transform: uppercase;
+    display: flex;
+    height: auto;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1px;
+}
+.user-actions {
+    display: none;
+    position: absolute;
+    top: 100%; /* Hiển thị phía dưới phần login-user */
+    left: 77%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Viền */
+    background-color: rgb(15, 155, 230);
+    z-index: 1;
+    border-radius: 5px;
+}
+.user-actions a{
+    
+    line-height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 14px 0;
+}
+.user-actions:hover{
+    /* background-color: rgb(194, 214, 223); */
+    border: 1px solid black;
+    color: black;
+    border-radius:5px ;
+    font-weight: 900;
+
+}
+.login-user:hover .user-actions {
+    display: block; /* Hiển thị khi hover vào users */
+}

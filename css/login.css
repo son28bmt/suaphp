@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    background-image: url(../image/backgroundlogin.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+}
+header{
+
+  
+    /* position: relative; */
+}
+.login-form-container {
+    
+    /* Add other styling as needed for your form */
+    /* background-color: #FFF; */
+    /* padding: 100%; */
+    
+    /* position: absolute;
+    top: 200px;
+    left: 600px; */
+    border-radius: 30px;
+    /* height: 370px; */
+    line-height: 33px;
+    /* background: rgba(0, 0, 0, 0.5); Semi-transparent black background */
+    justify-content: center;
+    align-items: center;
+    /* z-index: 999; */
+}
+.login-menu {
+    /* display: flex; */
+}
+h1{
+    position: absolute;
+    color: #FFF;
+    top: 142px;
+    left: 612px;
+    /* margin: 10px; */
+    font-size: 40px;
+}
+.login-form {
+    position: absolute;
+    color: #FFF;
+    top: 200px;
+    left: 600px; 
+    margin: 10px;
+    width: 370px;
+    font-size: 20px;
+    height: auto;
+     /* background: #fff;  */
+    padding: 30px;
+    border-radius: 8px;
+    /* box-shadow: 100px 100px 10px rgba(0, 0, 0, 0.3); */
+    /* Add other styling as needed for your form */
+}
+.login-form input[type="text"],input[type="password"]input[type="email"]{
+    padding: 17px 0;
+}
+.footer{
+    background-color: rgb(23, 162, 162);
+    border: none;
+    color: #FFF; 
+    width: 333px; 
+    padding: 10px 0;
+    border-radius: 5px; 
+    margin: 10px 0; 
+    font-size: 18px;
+    text-align: center;
+}

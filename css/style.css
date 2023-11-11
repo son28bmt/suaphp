@@ -105,7 +105,19 @@ header{
         overflow: hidden;
 
 }
-
+.cart-1 a{
+    text-decoration: none;
+    width: 102px;
+    /* border: 1px solid black; */
+    padding: 0px;
+    text-transform: uppercase;
+    display: block;
+    height: auto;
+    border-radius: 8px;
+    text-align: center;
+    margin: 1px; 
+    
+}
 .submenu{
     position: absolute;
     top: 51px;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="login.css">
     <title>
@@ -29,7 +29,7 @@
                         </li>
                        
                         
-                        <li><a href="# "><i class="fa-solid fa-bell" style="color: #ffffff;"></i><span> Thông Tin</span></a>
+                        <li><a href="info.PHP"><i class="fa-solid fa-bell" style="color: #ffffff;"></i><span> Thông Tin</span></a>
                             <ul class="submenu">
                                 <li><a href="">Hãng Sữa</a>
                                     <!-- <ul class="submenu-c3">
@@ -47,10 +47,10 @@
                 </div>
                     <div class="login-menu">
                     <div class="login" >
-                        <a href="#" class="login-1" onclick="showLoginForm('loginForm')"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span class="login-text">Đăng Nhập</span></a>
+                        <a href="login.php" class="login-1" onclick="showLoginForm('loginForm')"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span class="login-text">Đăng Nhập</span></a>
                     </div>
                     <div class="login">
-                        <a href="#" class="register" onclick="showRegisterForm()"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span class="login-text">Đăng Kí</span></a>
+                        <a href="register.php" class="register" onclick="showRegisterForm()"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span class="login-text">Đăng Kí</span></a>
                     </div>
                 </div>
 
@@ -76,7 +76,6 @@
         </nav>
     </header>
     <main>
-
         <div class="main-info" >
             <form action="" class="form-info">
                 <h3>Thông tin hãng sữa</h3>

@@ -1,11 +1,14 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="login.css">
+    <!-- <link rel="stylesheet" href="login.css"> -->
     <title>
       
         Sửa tươi</title>
@@ -29,7 +32,7 @@
                         </li>
                        
                         
-                        <li><a href="./info.html"><i class="fa-solid fa-bell" style="color: #ffffff;"></i><span> Thông Tin</span></a>
+                        <li><a href="./info.php"><i class="fa-solid fa-bell" style="color: #ffffff;"></i><span> Thông Tin</span></a>
                             <ul class="submenu">
                                 <li><a href="">Hãng Sữa</a>
                                     <!-- <ul class="submenu-c3">
@@ -47,7 +50,7 @@
                 </div>
                     <div class="login-menu">
                     <div class="login" >
-                        <a href="#" class="login-1" onclick="showLoginForm('loginForm')"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span class="login-text">Đăng Nhập</span></a>
+                        <a href="login.php" class="login-1" onclick="showLoginForm('loginForm')"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span class="login-text">Đăng Nhập</span></a>
                     </div>
                     <div class="login">
                         <a href="register.php" class="register" onclick="showRegisterForm()"><i class="fa-solid fa-user" style="color: #ffffff;"></i> <span class="login-text">Đăng Kí</span></a>
@@ -76,50 +79,7 @@
         </nav>
     </header>
     <main>
-                <div id="loginForm" style="display: none;" class="login-form-container">
-                    <!-- Your login form HTML goes here -->
-                    <!-- Example: -->
-                    <div class="login-form" >
-                        <form action="login.php" method="post" onsubmit="loginUser(); return false">
-                        <label for="user"> <b>Tên đầy đủ</b></label>
-                        <br>
-                        <input type="text" id="user" style="width: 333px; height: 30px;padding-left: 5px; border-radius: 5px; " placeholder="VD:Quang Sơn">
-                        <br>
-                        <label for="pass1"><b>Mật Khẩu</b></label>
-                        <br>
-                        <input type="password" id="pass1" style="width: 333px; height: 30px;padding-left: 5px; border-radius: 5px;  " placeholder=" Nhập mật khẩu">
-                        <br>
-                        
-                        <input class="footer" type="submit" value="đăng nhập">
-                    </div>
-                </div>
-
-               
-                <div id="registerForm" style="display: none;" class="login-form-container">
-                    <!-- Your registration form HTML goes here -->
-                    <!-- Example: -->
-                    <div class="login-form" >
-                        <form action="register.php" method="post" onsubmit="registerUser(); return false;">
-                        <label for="user"> <b>Tên đầy đủ</b></label>
-                        <br>
-                        <input type="text" id="loginUser" style="width: 314px; height: 30px;padding-left: 5px; border-radius: 5px; " placeholder="VD:Quang Sơn">
-                        <br>
-                        <label for="email"><b>Email</b></label>
-                        <br>
-                        <input type="email" id="email" style="width: 314px; height: 30px;padding-left: 5px; border-radius: 5px;  " placeholder="VD: Email@gmail.com">
-                        <br>
-                        <label for="pass1"><b>Mật Khẩu</b></label>
-                        <br>
-                        <input type="password" id="pass1" style="width: 314px; height: 30px;padding-left: 5px; border-radius: 5px;  " placeholder=" Nhập mật khẩu">
-                        <br>
-                        <label for="pass2"><b>Nhập Lại Mật Khẩu</b></label >
-                        <br>
-                        <input type="password" id="pass2" style="width: 314px; height: 30px;padding-left: 5px; border-radius: 5px;  " placeholder="Nhập lại mật khẩu">
-                        <br>
-                        <input class="footer" type="submit" value="Đăng kí">
-                    </div>
-                </div>
-                </div>
+                                        
                 <!-- <script>
                     function showLoginForm(formId) {
                         var formContainer = document.getElementById(formId);
