@@ -66,7 +66,7 @@ header{
 .login{
     /* background-color: rgb(11, 166, 210); */
     width: 102px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0px;
     text-transform: uppercase;
     display: block;
@@ -191,7 +191,7 @@ margin-bottom: 30px;
 }
 
 .navds-menu li{
-    /* display: none; */
+    /* cc */
     cursor: pointer;
     list-style: none;  
 
@@ -256,15 +256,12 @@ margin-bottom: 30px;
 
     line-height: 26px;
 }
-
-.div-to-hide {
-    display: none;
-}
-
 .product-heading{
     text-align: center;
 }
-
+.div-to-hide{
+    /* display: none; */
+}
 .Buy-now-a a{
     display: none;
     position: absolute;
@@ -303,7 +300,7 @@ footer{
     
 }
 .footer-top li{
-list-style: none;
+    list-style: none;
 }
 .footer{
     padding: 10px 135px;

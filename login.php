@@ -118,6 +118,8 @@ session_start();
                     if (xhr.status === 200) {
                         var response = xhr.responseText;
                         if (response === "success") {
+                            alert("Đăng nhập thành công.");
+                            
                             window.location.href = "user.php"; // Đăng nhập thành công, chuyển hướng đến trang "user.php"
                         } else {
                             document.getElementById("error-message").innerText = "Lỗi: " + response; // Hiển thị lỗi từ máy chủ

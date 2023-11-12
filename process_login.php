@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stored_password = $row['password'];
                 
 
-                if (password_verify($password, $stored_password)) {
+                if ($password==$stored_password) {
                     
                     // Đăng nhập thành công
                     $_SESSION['logged_in'] = true;
