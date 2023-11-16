@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="login.css"> -->
+    <link rel="stylesheet" href="css/slideshow.css">
     <title>
       
         Sửa tươi</title>
@@ -48,11 +49,48 @@
                 </script> -->
 
             <?php 
-                include("main/mainhd.php");
+                include("main/mainhome.php");
             ?>
-            <?php
-                include("main/main.php");
-            ?>
+            <div class="content">
+                    <?php
+                if(isset($_GET['quanly'])){
+                    $tam = $_GET['quanly'];
+                }else{
+                    $tam='';
+                }if($tam=='sua3tuoi'){
+                    include("main/suachobe.php");
+                }elseif($tam=='suamebau'){
+                    include("main/suachome.php");
+                }
+                elseif($tam=='suamebau'){
+                    include("main/topsanpham.php");
+                }
+                elseif($tam=='suachua'){
+                    include("main/suachua.php");
+                }
+                elseif($tam=='suachieucao'){
+                    include("main/suachieucao.php");
+                }
+                elseif($tam=='suatangcan'){
+                    include("main/suanguoigia.php");
+                }
+                elseif($tam=='sanpham'){
+                    include("main/mainsp.php");
+                }
+                elseif($tam=='thongtin'){
+                    include("info.php");
+                }
+                elseif($tam=='khuyenmai'){
+                    include("khuyenmai.php");
+                }
+                elseif($tam=='lienhe'){
+                    include("lienhe.php");
+                }
+                else{
+                    include("main/topsanpham.php");
+                }
+                ?>
+                </div>
        
     </main>
     <?php 

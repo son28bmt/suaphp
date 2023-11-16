@@ -17,7 +17,7 @@
                         
                         <li><a href="./info.php"><i class="fa-solid fa-bell" style="color: #ffffff;"></i><span> Thông Tin</span></a>
                             <ul class="submenu">
-                                <li><a href="">Hãng Sữa</a>
+                                <li><a href="user.php?quanly=thongtin">Hãng Sữa</a>
                                     <!-- <ul class="submenu-c3">
                                         <li><a href="#">nội địa</a></li>
                                         <li><a href="#">nhập khẩu</a></li>
@@ -27,8 +27,8 @@
                                 <li><a href="https://zalo.me/0387636718">zalo</a></li>
                             </ul>
                         </li>
-                        <li><a href=""><i class="fa-solid fa-universal-access" style="color: #ffffff;"></i><span> Khuyến Mãi</span></a></li>   
-                        <li><a href=""><i class="fa-solid fa-lightbulb" style="color: #ffffff;"></i><span> Liên Hệ</span></a></li>
+                        <li><a href="c"><i class="fa-solid fa-universal-access" style="color: #ffffff;"></i><span> Khuyến Mãi</span></a></li>   
+                        <li><a href="user.php?quanly=lienhe"><i class="fa-solid fa-lightbulb" style="color: #ffffff;"></i><span> Liên Hệ</span></a></li>
                     </ul>
                 </div>
                     <div class="login-menu">

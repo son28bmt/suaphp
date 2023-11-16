@@ -9,9 +9,9 @@
             <div class="footer-content">
                 <h3>Truy cập nhanh</h3>
                 <ul>
-                    <li><a href=""><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i><span> Trang chủ</span></a></li>
-                    <li><a href=""><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i><span> Sản phẩm</span></a></li>
-                    <li><a href=""><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i><span> Liên hệ</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i><span> Trang chủ</span></a></li>
+                    <li><a href="user.php?quanly=sanpham"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i><span> Sản phẩm</span></a></li>
+                    <li><a href="user.php?quanly=lienhe"><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i><span> Liên hệ</span></a></li>
                 </ul>
             </div>
             <div class="footer-right">

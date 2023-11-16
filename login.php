@@ -6,51 +6,7 @@ session_start();
             unset($_SESSION['registration_success']); // Xóa thông báo sau khi hiển thị
         }
 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
         
-            // Kết nối đến cơ sở dữ liệu
-            $servername = "localhost";
-            $db_username = "root";
-            $db_password = ""; // Thay "your_db_password" bằng mật khẩu của tài khoản MySQL
-            $dbname = "register";
-        
-            $conn = new mysqli($servername, $db_username, $db_password, $dbname);
-        
-            if ($conn->connect_error) {
-                die("Kết nối đến cơ sở dữ liệu thất bại: " . $conn->connect_error);
-            }
-        
-            if (empty($username) || empty($password)) {
-                echo '<script>document.getElementById("error-message").innerText = "Tên đăng nhập và mật khẩu không được để trống";</script>';
-            } else {
-                // Kiểm tra thông tin đăng nhập
-                $stmt = $conn->prepare("SELECT * FROM user WHERE username = ?");
-                $stmt->bind_param("s", $username);
-                $stmt->execute();
-                $result = $stmt->get_result();
-        
-                if ($result->num_rows == 1) {
-                    $row = $result->fetch_assoc();
-                    $stored_password = $row['password'];
-        
-                    if (password_verify($password, $stored_password)) {
-                        // Người dùng đã đăng nhập thành công
-                        $_SESSION['logged_in'] = true;
-                        echo '<script>alert("Đăng Nhập thành công");</script>';
-                        echo '<script>window.location.href = "user.php";</script>';
-                    } else {
-                        echo '<script>document.getElementById("error-message").innerText = "Mật khẩu không đúng";</script>';
-                    }
-                } else {
-                    echo '<script>document.getElementById("error-message").innerText = "Tên đăng nhập hoặc mật khẩu không đúng";</script>';
-                }
-                $stmt->close();
-            }
-            $conn->close();
-        }
-
         ?>
 
 <!DOCTYPE html>
@@ -70,7 +26,7 @@ session_start();
         <!-- Example: -->
         <h1>Thông Tin Đăng Nhập</h1>
         <div class="login-form">
-            <form action="login.php" method="post" onsubmit="return false;">
+            <form action="process_login.php" method="post" onsubmit="return false;">
                 <label for="user"><b>Username</b></label><br>
                 <input autocomplete="off" type="text" name="username" id="username" placeholder="Tên đăng nhập" style="width: 333px; height: 30px; padding-left: 5px; border-radius: 5px;"><br>
                 <label for="pass1"><b>Mật Khẩu</b></label><br>

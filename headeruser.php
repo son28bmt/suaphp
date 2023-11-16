@@ -1,7 +1,7 @@
 <nav>
             <div class="heading">
                 <div class="logo">
-                   <a href=""><img class="image-logo" src="image/Logo_th_group.png" alt="logosua"></a> 
+                   <a href="user.php"><img class="image-logo" src="image/Logo_th_group.png" alt="logosua"></a> 
                 </div>  
                 <div class="menu">
                     <ul class="subnav">
@@ -40,7 +40,7 @@
                         <a href="user.php?quanly=user" class="users-1"><i class="fa-solid fa-user fa-2xl" style="color: #ffffff; padding: 23px 15px 23px 14px;"></i></a>
                     </div>
                     <div class="user-actions">
-                        <a href="user.php?quanly=user">Xem thông tin</a><br>
+                        <a href="user.php?quanly=user-info">Xem thông tin</a><br>
                         <a href="user.php?quanly=logout">Đăng xuất</a>
                     </div>
                 </div>

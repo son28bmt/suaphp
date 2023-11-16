@@ -1,7 +1,5 @@
-<?php
-session_start();
-?>
 
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +9,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="login.css"> -->
     <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <title>
       
         Sửa tươi</title>
@@ -103,6 +102,10 @@ session_start();
                 }
                 elseif($tam=='user'){
                     include("user/logout");
+                }
+                elseif ($tam == 'user-info') {
+                    // Hiển thị thông tin cá nhân của người dùng
+                    include("user/user-info.php");
                 }
                 else{
                     include("main/topsanpham.php");
