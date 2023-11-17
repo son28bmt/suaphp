@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($username) || empty($password)) {
         echo "Tên đăng nhập và mật khẩu không được để trống";
     } else {
+
         // Kết nối đến cơ sở dữ liệu (thay đổi thông số kết nối dựa trên cấu hình của bạn)
         $servername = "localhost";
         $db_username = "root";

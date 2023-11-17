@@ -41,7 +41,7 @@
                     </div>
                     <div class="user-actions">
                         <a href="user.php?quanly=user-info">Xem thông tin</a><br>
-                        <a href="user.php?quanly=logout">Đăng xuất</a>
+                        <a href="home.php">Đăng xuất</a>
                     </div>
                 </div>
 
